@@ -34,23 +34,24 @@ Test Case Steps:
 
 
 
-API Automation Test Cases
+API Automation Test Cases:
 - POST Obtain OAuth2 token to access the Airalo Partner API
-Action: Create a Bearer token use it for the next steps
+  -  https://sandbox-partners-api.airalo.com/v2/token
+  -  Action: Create a Bearer token use it for the next steps
 
 - POST Order
-https://sandbox-partners-api.airalo.com/v2/orders
-Action: Order 6 eSIMs of package merhaba-7days-1gb.
+  - https://sandbox-partners-api.airalo.com/v2/orders
+  - Action: Order 6 eSIMs of package merhaba-7days-1gb.
 
 - GET eSIM List
-https://sandbox-partners-api.airalo.com/v2/esims
-Action: Fetch list of eSIMs and validate:
-
-There are exactly 6 results
-All have slug: merhaba-7days-1gb
-Authenticate using OAuth2.
-Post an order for 6 merhaba-7days-1gb eSIMs.
-Retrieve the list of eSIMs and validate:
+  - https://sandbox-partners-api.airalo.com/v2/esims
+  - Action: Fetch list of eSIMs and validate:
+    -  There are exactly 6 results
+    -  All have slug: merhaba-7days-1gb
+    -  Authenticate using OAuth2.
+    -  Post an order for 6 merhaba-7days-1gb eSIMs.
+    -  Retrieve the list of eSIMs and validate:
+      
 {
   "package_id": "merhaba-7days-1gb",
   "count": 6
@@ -83,12 +84,12 @@ npx cypress run --spec "cypress/e2e/api.js"
 
 
 Tools Used:
-Tool	
-Cypress	
-Node.js
-JavaScript
-Chai
-npm	
+- Tool	
+- Cypress	
+- Node.js
+- JavaScript
+- Chai
+- npm	
 
 👤 Author
 Filip Aleksoski
