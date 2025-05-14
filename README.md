@@ -3,19 +3,12 @@ This repository contains Cypress-based automated tests for both UI interaction a
 Repository Structure
 
 ├── cypress/
-
 │   ├── e2e/
-
 │   │   ├── airalo-API.cy.js          # API test script for Airalo
-
 │   │   ├── airalo-ui.cy.js          # UI test script for Airalo
-
 ├── api-tests.js                     
-
 ├── cypress.config.js  
-
 ├── package.json
-
 ├── README.md
 
 Overview of Test Cases & Implementation Approach:
