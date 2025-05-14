@@ -1,6 +1,6 @@
 This repository contains Cypress-based automated tests for both UI interaction and API validation as part of the Airalo Automation Coding Challenge.
 
-Repository Structure
+Repository Structure:
 
 cypress/
 	-	e2e/
